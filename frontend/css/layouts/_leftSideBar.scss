@@ -1,0 +1,32 @@
+.leftSideBar {
+  width: 10rem;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  li {
+    margin-bottom: 5rem;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 10px;
+    background: #3e3e3e;
+    box-shadow: 8px 8px 17px #353535, -8px -8px 17px #474747;
+
+    &:hover {
+      color: red;
+      box-shadow: inset 8px 8px 17px #353535, inset -8px -8px 17px #474747;
+    }
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@use '../utils/variables' as *;
+
+// arrows
+@mixin arrows {
+  @include shadow;
+  position: absolute;
+  top: 1.5rem;
+  z-index: 2;
+  font-size: 3rem;
+  padding: 1rem 1.5rem;
+  margin: 0 3rem 0 3rem;
+  border-radius: 40px;
+  background: $primary;
+
+  &:hover {
+    @include shadow-inset;
+    color: $secondary;
+    cursor: pointer;
+  }
+}
+
+@mixin arrows-cart {
+  @include shadow;
+  padding: 1rem 1.3rem;
+  font-size: 2rem;
+  border-radius: 30px;
+  background: $primary;
+
+  &:hover {
+    @include shadow-inset;
+    color: $secondary;
+    cursor: pointer;
+  }
+}
+
+// shadows
+@mixin shadow {
+  box-shadow: $outside;
+}
+
+@mixin shadow-inset {
+  box-shadow: $inside;
+}
+
+// flexbox
+@mixin flexbox($fd, $ai, $jc) {
+  display: flex;
+  flex-direction: $fd;
+  align-items: $ai;
+  justify-content: $jc;
+}

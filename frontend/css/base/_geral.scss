@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+a:focus {
+  outline: none;
+}
+
+a {
+  color: inherit;
+}

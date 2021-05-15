@@ -1,0 +1,51 @@
+@use '../pages/product' as *;
+
+.bottom-cart__button {
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 27px;
+  background: #108d4f;
+  box-shadow: 7px 7px 14px #2a2a2a, -7px -7px 14px #525252;
+
+  &:hover {
+    box-shadow: inset 7px 7px 14px #0b5e35, inset -7px -7px 14px #15bc69;
+  }
+}
+
+.product {
+  &__buttons {
+    margin-left: -4.5rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    display: flex;
+  }
+
+  &--addButton {
+    width: 15rem;
+    height: 2rem;
+    border: none;
+    background-color: #f7ca00;
+    border-radius: 27px;
+    box-shadow: 7px 7px 14px #2a2a2a, -7px -7px 14px #525252;
+
+    &:hover {
+      border-radius: 27px;
+      background: #f7ca00;
+      box-shadow: inset 7px 7px 14px #a58700, inset -7px -7px 14px #ffff00;
+    }
+  }
+
+  &--buyButton {
+    width: 15rem;
+    height: 2rem;
+    border: none;
+    background-color: #f18c0c;
+    border-radius: 27px;
+    box-shadow: 7px 7px 14px #2a2a2a, -7px -7px 14px #525252;
+
+    &:hover {
+      background: #f18c0c;
+      box-shadow: inset 7px 7px 14px #a15e08, inset -7px -7px 14px #ffba10;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@use '../utils/mixins' as *;
+
+.arrows-right {
+  @include arrows;
+  right: 2rem;
+}
+
+.arrows-left {
+  @include arrows;
+  left: 2rem;
+}
+
+.arrows-cart-left {
+  @include arrows-cart;
+  margin-left: 2rem;
+}
+
+.arrows-cart-right {
+  @include arrows-cart;
+  margin-right: 2rem;
+}

@@ -1,0 +1,17 @@
+.product {
+  &__heart {
+    padding: 1rem;
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    font-size: 1.8rem;
+    border-radius: 50px;
+    background: #3e3e3e;
+    box-shadow: 8px 8px 17px #353535, -8px -8px 17px #474747;
+
+    &:hover {
+      color: red;
+      box-shadow: inset 8px 8px 17px #353535, inset -8px -8px 17px #474747;
+    }
+  }
+}

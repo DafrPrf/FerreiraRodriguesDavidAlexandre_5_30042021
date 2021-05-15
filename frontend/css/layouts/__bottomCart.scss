@@ -1,0 +1,67 @@
+.bottom-cart {
+  position: absolute;
+  bottom: 1rem;
+  right: 7rem;
+  height: 15rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  border-radius: 27px;
+  background: #3e3e3e;
+  box-shadow: 7px 7px 14px #2a2a2a, -7px -7px 14px #525252;
+
+  &__product-container {
+    width: 80%;
+    height: 90%;
+    margin-left: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    background: #3e3e3e;
+    box-shadow: inset 7px 7px 14px #2a2a2a, inset -7px -7px 14px #525252;
+  }
+
+  &__card {
+    padding: 0.5rem;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 27px;
+    background: #3e3e3e;
+    box-shadow: 7px 7px 14px #2a2a2a, -7px -7px 14px #525252;
+  }
+
+  &__image {
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+
+  &__price {
+    font-weight: 700;
+    color: rgb(141, 21, 21);
+  }
+
+  &--plus {
+    color: red;
+  }
+
+  &__total {
+    margin: 0 1rem 0 1rem;
+    padding-left: 1rem;
+    width: 17%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    border-radius: 30px;
+    background: #3e3e3e;
+    box-shadow: inset 7px 7px 14px #2a2a2a, inset -7px -7px 14px #525252;
+  }
+}
