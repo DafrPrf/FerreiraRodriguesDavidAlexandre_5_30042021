@@ -2,26 +2,40 @@
 @use '../utils/variables' as *;
 
 .products {
-  @include flexbox(row, center, space-around);
+  @include flexbox(row, center, center);
   z-index: 1;
   overflow: hidden;
   margin-top: -4rem;
-  min-width: 100%;
+  min-width: 69%;
   height: 30rem;
+
+  #card {
+    position: relative;
+    left: 36rem;
+    margin-right: 4rem;
+  }
+
+  #card:last-child {
+    margin-right: 0;
+  }
 
   &__card {
     @include flexbox(column, center, space-around);
     min-width: 20rem;
     height: 25rem;
-    margin-right: 4rem;
     padding: 1rem;
     border-radius: 27px;
     box-shadow: $outside;
+    background: $primary;
 
     &:hover {
       border-radius: 27px;
       box-shadow: $inside;
     }
+  }
+
+  &__card:first-child {
+    margin-left: 0;
   }
 
   &__image {

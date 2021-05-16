@@ -3,8 +3,6 @@
 // arrows
 @mixin arrows {
   @include shadow;
-  position: absolute;
-  top: 1.5rem;
   z-index: 2;
   font-size: 3rem;
   padding: 1rem 1.5rem;

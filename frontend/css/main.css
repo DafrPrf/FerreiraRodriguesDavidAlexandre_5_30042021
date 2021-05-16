@@ -161,8 +161,6 @@ html {
 
 .arrows-right {
   box-shadow: 7px 7px 14px #2a2a2a, -7px -7px 14px #525252;
-  position: absolute;
-  top: 1.5rem;
   z-index: 2;
   font-size: 3rem;
   padding: 1rem 1.5rem;
@@ -179,8 +177,6 @@ html {
 
 .arrows-left {
   box-shadow: 7px 7px 14px #2a2a2a, -7px -7px 14px #525252;
-  position: absolute;
-  top: 1.5rem;
   z-index: 2;
   font-size: 3rem;
   padding: 1rem 1.5rem;
@@ -547,12 +543,20 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   z-index: 1;
   overflow: hidden;
   margin-top: -4rem;
-  min-width: 100%;
+  min-width: 69%;
   height: 30rem;
+}
+.products #card {
+  position: relative;
+  left: 36rem;
+  margin-right: 4rem;
+}
+.products #card:last-child {
+  margin-right: 0;
 }
 .products__card {
   display: flex;
@@ -561,14 +565,17 @@ html {
   justify-content: space-around;
   min-width: 20rem;
   height: 25rem;
-  margin-right: 4rem;
   padding: 1rem;
   border-radius: 27px;
   box-shadow: 7px 7px 14px #2a2a2a, -7px -7px 14px #525252;
+  background: #3e3e3e;
 }
 .products__card:hover {
   border-radius: 27px;
   box-shadow: inset 7px 7px 14px #2a2a2a, inset -7px -7px 14px #525252;
+}
+.products__card:first-child {
+  margin-left: 0;
 }
 .products__image {
   width: 15rem;
