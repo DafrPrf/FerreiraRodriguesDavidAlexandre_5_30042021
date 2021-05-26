@@ -10,12 +10,16 @@
   left: 2rem;
 }
 
-.arrows-cart-left {
+.arrows-up {
   @include arrows-cart;
-  margin-left: 2rem;
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
 }
 
-.arrows-cart-right {
+.arrows-down {
   @include arrows-cart;
-  margin-right: 2rem;
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
 }

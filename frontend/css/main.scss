@@ -5,6 +5,7 @@
 @forward 'utils/mixins';
 @forward 'components/leftRightArrows';
 @forward 'components/buttons';
+@forward 'components/popup';
 @forward 'components/heart';
 @forward 'layouts/container';
 @forward 'layouts/header';
@@ -13,6 +14,8 @@
 @forward 'layouts/_bottomCart';
 @forward 'pages/content';
 @forward 'pages/products';
-@forward 'pages/card';
 @forward 'pages/product';
+@forward 'pages/cart';
 @forward 'layouts/contentContainer';
+@forward 'pages/register';
+@forward 'pages/thanks';

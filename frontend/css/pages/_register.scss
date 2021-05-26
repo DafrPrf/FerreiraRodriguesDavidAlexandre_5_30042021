@@ -1,0 +1,50 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.register {
+  @include flexbox(column, center, center);
+  width: 90%;
+
+  &__container {
+    @include flexbox(column, center, center);
+
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  &__formNameContainer {
+    @include flexbox(row, center, space-between);
+    width: 100%;
+
+    .left,
+    .right {
+      @include flexbox(column, center, center);
+
+      input[type='text'],
+      label {
+        width: 19rem;
+      }
+    }
+  }
+
+  label {
+    width: 40rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    width: 40rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #363636;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    border: none;
+    box-shadow: inset 3px 3px 6px #2b2b2b, inset -3px -3px 3px #515151;
+    color: #c4bebe;
+  }
+}

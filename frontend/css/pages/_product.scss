@@ -1,20 +1,33 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
 .product {
-  margin-top: -4rem;
+  @include flexbox(column, center, center);
   position: relative;
   width: 40rem;
-  height: 30rem;
-  border-radius: 27px;
+  height: 34rem;
+  border-radius: 30px;
+  padding: 0 2rem;
   background: #3e3e3e;
   box-shadow: inset 7px 7px 14px #353535, inset -7px -7px 14px #474747;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 2rem;
+
+  &__card {
+    @include flexbox(column, center, center);
+  }
+
+  &__title {
+    position: absolute;
+    top: -4rem;
+    font-family: $dancing;
+    font-size: 2.8rem;
+    margin-left: 1rem;
+  }
 
   img {
     margin: 2rem 0 2rem 0;
     padding: 1rem;
     border-radius: 27px;
+    max-width: 20rem;
     background: linear-gradient(145deg, #424242, #383838);
     box-shadow: 7px 7px 14px #2a2a2a, -7px -7px 14px #525252;
   }
@@ -35,17 +48,33 @@
     }
   }
 
-  &__description {
+  &__descriptionContainer {
     margin-bottom: 1rem;
+    @include flexbox(column, center, center);
+  }
+
+  &__description {
+    width: 80%;
+    height: 4rem;
+  }
+
+  &__priceAndRankContainer {
+    width: 100%;
+    @include flexbox(row, center, space-around);
+  }
+
+  &__price {
+    color: $priceColor;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
   }
 
   &__rank {
-    @extend .product__description;
     color: #ffa41c;
   }
 
   &__selections {
-    @extend .product__description;
     font-weight: 700;
     margin-top: 1rem;
   }
@@ -57,7 +86,7 @@
     cursor: pointer;
   }
 
-  input[type="number"] {
+  input[type='number'] {
     padding-left: 1rem;
     border: none;
     text-align: center;
@@ -78,7 +107,7 @@
     box-shadow: 7px 7px 14px #2a2a2a, -7px -7px 14px #525252;
   }
 
-  input[type="submit"] {
-    margin: 0 0 1rem 5rem;
+  input[type='submit'] {
+    margin: 1rem 0 1rem 5rem;
   }
 }

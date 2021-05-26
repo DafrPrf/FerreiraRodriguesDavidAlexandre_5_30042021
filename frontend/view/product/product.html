@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/30cf2bc590.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Roboto:wght@300;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <title>OriFlash</title>
+  </head>
+  <body class="container">
+    <header class="header">
+      <a class="header__logo" href="../home/home.html">OriFlash</a>
+
+      <nav class="header__nav">
+        <ul>
+          <li>
+            <a href="../user/register/register.html"
+              ><i class="far fa-user"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </li>
+          <li>
+            <a href="../cart/cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content-container">
+      <nav class="leftSideBar">
+        <ul>
+          <li><a href="../productsList/products.html">Produits</a></li>
+          <li><a href="../home/home.html">OriFlash</a></li>
+          <li><a href="../">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="content">
+        <article class="product"></article>
+        <div class="popup activated">
+          <div class="popup__texteContainer">
+            <p>Votre article à bien éte enregistrer.</p>
+            <p>Voulez-vous continuer vous achats ou aller au panier ?</p>
+          </div>
+          <div class="popup__btnContainer">
+            <a
+              class="popup__btn popup__continueBtn"
+              href="../productsList/products.html"
+              >Continuer les achats</a
+            >
+            <a class="popup__btn popup__cartBtn" href="../cart/cart.html"
+              >Aller au panier</a
+            >
+          </div>
+        </div>
+        <div class="popupAlert alert">
+          <div class="popupAlert__texteContainer">
+            <p>
+              <i class="popupAlert__alertIcon fas fa-exclamation-triangle"></i>
+              Attention cette article est déjà présent dans le panier !
+            </p>
+            <!-- <p>Voulez-vous continuer vous achats ou aller au panier ?</p> -->
+          </div>
+          <div class="popupAlert__btnContainer">
+            <a
+              class="popupAlert__btn popupAlert__continueBtn"
+              href="../productsList/products.html"
+              >Continuer les achats</a
+            >
+            <a
+              class="popupAlert__btn popupAlert__cartBtn"
+              href="../cart/cart.html"
+              >Aller au panier</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="socialMedias">
+        <ul>
+          <li>
+            <a href=""><i class="facebook fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="instagram fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="twitter fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="youtube fab fa-youtube"></i></a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <script src="../../js/functions.js"></script>
+    <script src="../../js/fetch.js"></script>
+    <script src="../../js/ui.js"></script>
+    <script src="../../js/localStorage.js"></script>
+    <script src="./product.js"></script>
+  </body>
+</html>

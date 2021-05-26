@@ -1,3 +1,5 @@
+@use '../utils/variables' as *;
+
 .socialMedias {
   width: 5rem;
   margin-top: -3rem;
@@ -9,7 +11,7 @@
     justify-content: space-between;
     padding: 0.5rem;
 
-    a {
+    .facebook {
       margin-bottom: 2rem;
       display: flex;
       align-items: center;
@@ -21,8 +23,35 @@
       box-shadow: 8px 8px 17px #353535, -8px -8px 17px #474747;
 
       &:hover {
-        color: red;
+        color: $facebook;
         box-shadow: inset 8px 8px 17px #353535, inset -8px -8px 17px #474747;
+      }
+    }
+
+    .instagram {
+      @extend .facebook;
+
+      &:hover {
+        background: $instagram;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+    }
+
+    .twitter {
+      @extend .facebook;
+
+      &:hover {
+        color: $twitter;
+      }
+    }
+
+    .youtube {
+      @extend .facebook;
+
+      &:hover {
+        color: $youtube;
       }
     }
   }

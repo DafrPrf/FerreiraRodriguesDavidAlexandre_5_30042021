@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/30cf2bc590.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Roboto:wght@300;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../../css/main.css" />
+    <title>OriFlash | S'inscrire</title>
+  </head>
+  <body class="container">
+    <header class="header">
+      <a class="header__logo" href="../../home/home.html">OriFlash</a>
+
+      <nav class="header__nav">
+        <ul>
+          <li>
+            <a href="../register/register.html"><i class="far fa-user"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </li>
+          <li>
+            <a href="../../cart/cart.html"
+              ><i class="fas fa-shopping-cart"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content-container">
+      <nav class="leftSideBar">
+        <ul>
+          <li><a href="../../productsList/products.html">Produits</a></li>
+          <li><a href="../../home/home.html">OriFlash</a></li>
+          <li><a href="../../contact/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="content">
+        <h1 class="content__title">S'inscrire</h1>
+
+        <div class="register">
+          <form class="register__container" id="registerForm" action="#">
+            <div class="register__formNameContainer">
+              <div class="left">
+                <label for="firstName">Prénom</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="Jean"
+                  required
+                />
+              </div>
+
+              <div class="right">
+                <label for="lastName">Nom</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Jacques"
+                  required
+                />
+              </div>
+            </div>
+
+            <label for="address">Addresse</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="84 rue de Rivoli"
+              required
+            />
+
+            <label for="city">Ville</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="75004 Paris"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@mail.fr"
+              required
+            />
+            <button class="register__btn" type="submit">Envoyer</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="socialMedias">
+        <ul>
+          <li>
+            <a href=""><i class="facebook fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="instagram fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="twitter fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="youtube fab fa-youtube"></i></a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <script src="../../../js/fetch.js"></script>
+    <script src="../../../js/ui.js"></script>
+    <script src="../../../js/functions.js"></script>
+    <script src="./register.js"></script>
+  </body>
+</html>
