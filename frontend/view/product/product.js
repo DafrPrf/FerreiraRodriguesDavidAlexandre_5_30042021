@@ -4,7 +4,8 @@ const fetchProductById = new Fetch();
 const ui = new UiUpdate();
 const saveOnLocalStorage = new Storage();
 
-let productID = localStorage.getItem('productID');
+// recuperate product id from url
+let productID = Url.getId();
 
 fetchProductById
   .fetchProductByID(productID)
@@ -17,8 +18,8 @@ fetchProductById
     const productName = data[0].name;
     const productImage = data[0].imageUrl;
 
-    // random id for differentiate the same products wich only have
-    // lenses differents in cart
+    // random id for differentiate the same products which only have
+    // lenses different in cart
     const randomID = Math.random() * 10000;
 
     productsArray.push(
@@ -49,7 +50,7 @@ fetchProductById
       productsArray.push(productQuantityValue, productLensesValue);
 
       // call Storage method saveProducts with values entered by
-      // the user and the product choiced ID and price
+      // the user and the product choices ID and price
       saveOnLocalStorage.saveProducts(productsArray);
     });
 
@@ -66,7 +67,7 @@ fetchProductById
       console.log(productsArray);
 
       // call Storage method saveProducts with values entered by
-      // the user and the product choiced ID and price
+      // the user and the product choices ID and price
       saveOnLocalStorage.saveProducts(productsArray);
 
       // redirect to cart page

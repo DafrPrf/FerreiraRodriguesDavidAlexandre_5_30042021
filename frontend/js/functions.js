@@ -10,11 +10,8 @@ function getProductID() {
       // recuperate selected product id
       let selectedProduct = product[i].dataset.id;
 
-      // send product id to localStorage
-      localStorage.setItem('productID', selectedProduct);
-
-      // redirect page to product.html
-      location.href = '../product/product.html';
+      // redirect page to product.html with the respective product id
+      window.location = `../product/product.html?id=${selectedProduct}`;
     });
   }
 }

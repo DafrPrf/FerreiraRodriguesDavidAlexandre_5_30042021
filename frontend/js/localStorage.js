@@ -64,25 +64,5 @@ class Storage {
       // display popupo and ask the user for the next step
       whatsNextPopup(alert);
     }
-
-    // let productsInLocalStorage = JSON.parse(
-    //   localStorage.getItem('Added Products')
-    // );
-
-    // if (productsInLocalStorage) {
-    //   productsInLocalStorage.push(productValues);
-    //   localStorage.setItem(
-    //     'Added Products',
-    //     JSON.stringify(productsInLocalStorage)
-    //   );
-    // } else {
-    //   productsInLocalStorage = [];
-    //   productsInLocalStorage.push(productValues);
-
-    //   localStorage.setItem(
-    //     'Added Products',
-    //     JSON.stringify(productsInLocalStorage)
-    //   );
-    // }
   }
 }
