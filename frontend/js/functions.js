@@ -44,7 +44,7 @@ function sendFormData(e) {
   const fetchOrder = new Fetch();
 
   // recuperate the id of products added int the cart
-  let productId = JSON.parse(localStorage.getItem('Added Products'));
+  let productId = JSON.parse(localStorage.getItem('addedProducts'));
 
   let products = [];
 
@@ -72,5 +72,5 @@ function sendFormData(e) {
 }
 
 function updateThanksPage(data) {
-  localStorage.setItem('thanks page data ', JSON.stringify(data));
+  localStorage.setItem('thanksPageData', JSON.stringify(data));
 }

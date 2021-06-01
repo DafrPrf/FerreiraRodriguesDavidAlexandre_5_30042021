@@ -15,7 +15,7 @@ class Storage {
 
     // variable to store any product which is in localStorage
     let productsInLocalStorage = JSON.parse(
-      localStorage.getItem('Added Products')
+      localStorage.getItem('addedProducts')
     );
     let alert;
     const items = [];
@@ -32,19 +32,19 @@ class Storage {
         }
       });
 
-      // if array items.lenght > 0
+      // if array items.length > 0
       if (items.length != 0) {
         alert = true;
         // display alert "this product is already in the cart"
         whatsNextPopup(alert);
 
-        // if loaclStorage have product but not the same add the new one
+        // if localStorage have product but not the same add the new one
       } else {
         alert = false;
 
         productsInLocalStorage.push(productValues);
         localStorage.setItem(
-          'Added Products',
+          'addedProducts',
           JSON.stringify(productsInLocalStorage)
         );
         // display popup and ask the user for the next step
@@ -55,13 +55,13 @@ class Storage {
     } else {
       productsInLocalStorage = [];
       productsInLocalStorage.push(productValues);
-      console.log('new product added');
+
       alert = false;
       localStorage.setItem(
-        'Added Products',
+        'addedProducts',
         JSON.stringify(productsInLocalStorage)
       );
-      // display popupo and ask the user for the next step
+      // display popup and ask the user for the next step
       whatsNextPopup(alert);
     }
   }

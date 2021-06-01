@@ -1,5 +1,5 @@
 // get products from localStorage
-let productsCart = JSON.parse(localStorage.getItem('Added Products'));
+let productsCart = JSON.parse(localStorage.getItem('addedProducts'));
 
 const uiCart = new UiUpdate();
 
@@ -59,5 +59,5 @@ payBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
   // redirect link to register user page
-  location.href = '../user/register/register.html';
+  window.location = '../user/register/register.html';
 });

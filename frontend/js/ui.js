@@ -128,9 +128,9 @@ class UiUpdate {
 
   // remove product from cart
   removeItem(productID) {
-    let item = JSON.parse(localStorage.getItem('Added Products'));
+    let item = JSON.parse(localStorage.getItem('addedProducts'));
 
-    // loock for the index of the product we have selected
+    // look for the index of the product we have selected
     const index = item.findIndex((el) => el.randomId == productID);
 
     if (index > -1) {
@@ -139,7 +139,7 @@ class UiUpdate {
     }
 
     // refresh localStorage
-    localStorage.setItem('Added Products', JSON.stringify(item));
+    localStorage.setItem('addedProducts', JSON.stringify(item));
     // refresh the page to make removed products disappear
     location.reload();
   }

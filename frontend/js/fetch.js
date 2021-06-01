@@ -36,7 +36,7 @@ class Fetch {
       const data = await response.json();
       return data;
     } catch (err) {
-      console.log('Error fetching orde: ', err);
+      console.log('Error fetching order: ', err);
     }
   }
 }
