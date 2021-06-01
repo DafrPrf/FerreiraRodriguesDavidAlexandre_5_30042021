@@ -81,11 +81,6 @@ class UiUpdate {
               type="submit"
               value="Ajouter au panier"
             />
-            <input
-              class="product--buyButton"
-              type="submit"
-              value="Acheter l'article"
-            />
           </div>
             </figcaption>
           </figure>

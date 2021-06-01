@@ -38,7 +38,7 @@ class Storage {
         // display alert "this product is already in the cart"
         whatsNextPopup(alert);
 
-        // if loaclStorage have product but not tthe same add the new one
+        // if loaclStorage have product but not the same add the new one
       } else {
         alert = false;
 
@@ -47,7 +47,7 @@ class Storage {
           'Added Products',
           JSON.stringify(productsInLocalStorage)
         );
-        // display popupo and ask the user for the next step
+        // display popup and ask the user for the next step
         whatsNextPopup(alert);
       }
 

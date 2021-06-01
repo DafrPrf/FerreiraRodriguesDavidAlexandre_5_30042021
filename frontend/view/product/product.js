@@ -36,7 +36,6 @@ fetchProductById
     const productQuantity = document.querySelector('.product__quantity');
     const productLenses = document.querySelector('.product__lenses');
     const addBtn = document.querySelector('.product--addCartButton');
-    const buyBtn = document.querySelector('.product--buyButton');
 
     // add an eventListener for "Ajouter au panier" btn
     addBtn.addEventListener('click', (e) => {
@@ -52,25 +51,5 @@ fetchProductById
       // call Storage method saveProducts with values entered by
       // the user and the product choices ID and price
       saveOnLocalStorage.saveProducts(productsArray);
-    });
-
-    // add event listener for "Acheter l'article" btn
-    buyBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-
-      // get product values entered by the user
-      const productQuantityValue = productQuantity.value;
-      const productLensesValue =
-        productLenses.options[productLenses.selectedIndex].text;
-
-      productsArray.push(productQuantityValue, productLensesValue);
-      console.log(productsArray);
-
-      // call Storage method saveProducts with values entered by
-      // the user and the product choices ID and price
-      saveOnLocalStorage.saveProducts(productsArray);
-
-      // redirect to cart page
-      location.href = '../cart/cart.html';
     });
   });
